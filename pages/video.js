@@ -13,7 +13,7 @@ const VideoPage = () => {
           controls
           width="1100"
           height="750"
-          src="https://res.cloudinary.com/daykoacnc/video/upload/v1721897593/My_movie_10_1_nqvzix.mp4"
+          src="https://res.cloudinary.com/daykoacnc/video/upload/v1721906798/Stefan_Kamand_o9ezmg.mp4"
         ></video>
       </div>
       <style jsx>{`
