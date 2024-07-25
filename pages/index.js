@@ -49,7 +49,7 @@ export default function Home() {
 
       <div className="wrapper" ref={wrapperRef}>
         <img src="/assets/test2.gif" alt="Question Mark" className="question-image" />
-        <h2 className="question" ref={questionRef}>Be My Girlfriend?</h2>
+        <h2 className="question" ref={questionRef}>Are We Finally Offical?</h2>
         <div className="btn-group">
           <button className="yes-btn" ref={yesBtnRef}>Yes</button>
           <button className="no-btn" ref={noBtnRef}>No</button>
