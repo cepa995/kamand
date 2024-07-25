@@ -8,7 +8,7 @@ export default function Home() {
   const yesBtnRef = useRef(null);
   const noBtnRef = useRef(null);
   const router = useRouter();
-  
+
   useEffect(() => {
     const wrapper = wrapperRef.current;
     const question = questionRef.current;
@@ -18,8 +18,9 @@ export default function Home() {
     const noBtnRect = noBtn.getBoundingClientRect();
 
     const handleClick = () => {
-      question.innerHTML = 'Took you long enough ...';setTimeout(() => {
-        router.push('/video'); 
+      question.innerHTML = 'I Love You Too :)';
+      setTimeout(() => {
+        router.push('/video');
       }, 3000);
     };
 
@@ -37,7 +38,7 @@ export default function Home() {
       yesBtn.removeEventListener('click', handleClick);
       noBtn.removeEventListener('mouseover', handleMouseOver);
     };
-  }, []);
+  }, [router]);
 
   return (
     <div>
@@ -47,7 +48,7 @@ export default function Home() {
       </Head>
 
       <div className="wrapper" ref={wrapperRef}>
-        <i className="fa fa-question-circle"></i>
+        <img src="/assets/test2.gif" alt="Question Mark" className="question-image" />
         <h2 className="question" ref={questionRef}>Be My Girlfriend?</h2>
         <div className="btn-group">
           <button className="yes-btn" ref={yesBtnRef}>Yes</button>
@@ -64,7 +65,7 @@ export default function Home() {
             font-family: 'Poppins', sans-serif;
         }
         *::selection {
-            background: #7d2ae8;
+            background: linear-gradient(135deg, #6226a2 0%, #c325fc 100%);
             color: #fff;
         }
         body {
@@ -72,7 +73,7 @@ export default function Home() {
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: #7d2ae8;
+            background: linear-gradient(135deg, #6226a2 0%, #c325fc 100%);
         }
         .wrapper {
             position: relative;
@@ -85,16 +86,16 @@ export default function Home() {
             align-items: center;
             flex-direction: column;
         }
-        i {
-            font-size: 7.5em;
-            color: #7d2ae8;
-            border: 5px solid transparent;
-            outline: 3px solid #7d2ae8;
+        .question-image {
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
+            border: 3px solid #c325fc;
+            margin-bottom: 20px;
         }
         h2 {
             font-size: 3em;
-            color: #7d2ae8;
+            color: linear-gradient(135deg, #6226a2 0%, #c325fc 100%);
             margin: 15px 0;
         }
         .btn-group {
@@ -112,18 +113,18 @@ export default function Home() {
             color: #fff;
             font-weight: 600;
             border-radius: 30px;
-            border: 2px solid #7d2ae8;
+            border: 2px solid #c325fc;
             outline: none;
             cursor: pointer;
             box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
         }
         button:nth-child(1) {
             margin-left: -200px;
-            background: #7d2ae8;
+            background: #c325fc;
         }
         button:nth-child(2) {
             margin-right: -200px;
-            color: #7d2ae8;
+            color: #c325fc;
         }
       `}</style>
     </div>
