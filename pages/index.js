@@ -18,7 +18,7 @@ export default function Home() {
     const noBtnRect = noBtn.getBoundingClientRect();
 
     const handleClick = () => {
-      question.innerHTML = 'I Love You Too :)';
+      question.innerHTML = 'Took You Long Enough ...';
       setTimeout(() => {
         router.push('/video');
       }, 3000);
@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Million Dolar Question</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
