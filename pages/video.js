@@ -11,9 +11,9 @@ const VideoPage = () => {
         <h1>Enjoy the Video ❤️</h1>
         <video
           controls
-          width="1100"
-          height="750"
-          src="https://res.cloudinary.com/daykoacnc/video/upload/v1721984010/My_movie_10_1_1_racuqy.mp4"
+          width="1000"
+          height="650"
+          src="https://res.cloudinary.com/daykoacnc/video/upload/v1722192048/My_movie_10_2_1_yx0nqt.mp4"
         ></video>
       </div>
       <style jsx>{`
